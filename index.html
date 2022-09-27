@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="asset/images/SF.png">
+    <title>Sylvain Foucault - Développeur Web et Web Mobile à Amiens</title>
+    <meta name="description" content="Ma page de présentation et portfolio. Elle reprend mes expériences en développement web, mes compétences, accès à mon CV et un formulaire de contact." />
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +18,15 @@
 
         <div class="montee">
             <div class="nomTitreConteneur">
-                <h1>SYLVAIN FOUCAULT</h1>
-                <h2>Développeur Web - Web Mobile</h2>
+                <div class="nomReseaux">
+                    <span class="logo">SF</span>
+                    <h1>SYLVAIN FOUCAULT</h1>
+                    <div class="reseauxLogosHaut">
+                        <img src="./asset/images/twitter-logo.png" class="reseauxLogo">
+                        <img src="./asset/images/instagram-logo.png" class="reseauxLogo">
+                    </div>                    
+                </div>
+                <h2>Développeur Web - Web Mobile à Amiens</h2>
             </div>  
 
             <div class="skew-cc"></div>
@@ -25,20 +34,16 @@
             <div class="photoParcoursConteneur">
                 <div class="portraitConteneur">
                     <div class="voletPortrait">
-                        <img src="./portrait.png">
+                        <img src="./asset/images/portrait.png" class="portrait">
                     </div>                
                 </div>
                 
-                <div class="diplomes">
-                    <h3>Diplômes : </h3>
-                    <div class="diplome1">
-                        <p>2022 - Titulaire d'un titre professionel</p>
-                        <p style="margin-left:78px"> Développeur Web - Web mobile</p>
-                    </div>
-                    <div class="diplome2">
-                        <p>2007 - Titulaire d'une licence professionelle</p>
-                        <p style="margin-left:78px"> Systèmes Informatiques et Logiciels</p>
-                    </div>
+                <div class="mot">
+                    <img src="./asset/images/quote-1.png" class="quoteOpen">
+                    <p>Je suis doté d'une solide <strong>base théorique</strong>, je m'épanouis dans des
+                        environnements <strong>dynamiques</strong> grâce à ma capacité à <strong>écouter</strong> et à
+                        résoudre des problèmes complexes pour atteindre les <strong>objectifs</strong> fixés.</p>
+                    <img src="./asset/images/quote-2.png" class="quoteClose">    
                 </div>           
             </div>  
         </div>          
@@ -49,73 +54,88 @@
         <div class="skew-c"></div>
         <div class="portfolio-block">
             <h2>Bienvenue sur mon portfolio.</h2>            
-            <p class="portfolioP">Ce portfolio est constitué de projets réalisés pendant ma formation développeur web, ainsi que pendant le stage et dans mon temps libre.</p>
-            <div class="portfolio-wrapper">
-                <div class="portfolio">
-                    <div class="item">
-                        <img src="./asset/images/airGoRun.png" alt="airgo run" id="airGoRunScreen">
-                        <div class="item-overlay">
-                            <div class="project-desc">
-                                <h3>Projet AirGo Run</h3>
-                                <p>Premier projet design puis intégration, promotion de montres sportives.</p>
-                            </div>
-                            <a href="" class="boutonVoir">Voir</a>
+            <div class="portfolioLine">
+                <div class="reseauxLogosBasGauche">
+                    <img src="./asset/images/github.png" class="reseauxLogoBas" id="githubLogo">
+                    <img src="./asset/images/linkedin.png" class="reseauxLogoBas">
+                </div>                
+                <p class="portfolioP">Ce portfolio est constitué de projets réalisés pendant ma formation développeur web, ainsi que pendant le stage et dans mon temps libre.</p>
+                <a class="scrollLien"><span class="scroll">Scroll</span></a>
+            </div>
+        
+            <div class="portfolio">
+                <div class="item">
+                    <img src="./asset/images/airGoRun.png" alt="airgo run" id="airGoRunScreen">
+                    <div class="item-overlay">
+                        <div class="project-desc">
+                            <h3>AirGo Run</h3>
+                            <p>Projet réalisé au cours de la formation web dev avec Instep à Amiens. Il s'agissait de <strong>designer</strong> puis <strong>intégrer</strong> le site AirGo Run selon <strong>cahier des charges</strong> (site fictif faisant la promotion de montres sportives). Utilisation de <strong>Figma</strong>, puis intégration <strong>HTML CSS</strong>.</p>
                         </div>
-                    </div>                
-                    <div class="item">
-                        <img src="./asset/images/contactFormAMP.png" alt="formulaire de contact" id="contactForm">
-                        <div class="item-overlay">
-                            <div>
-                                <h3>Page contact projet AMP</h3>
-                                <p>Projet de stage, création d'une page web pour le site AMP.</p>
-                            </div>
-                            <a href="" class="boutonVoir">Voir</a>
-                        </div>
+                        <a class="boutonVoir" id="boutonVoir1" onclick="voirAirGoRun()">Voir</a>
                     </div>
-                    <div class="item">
-                        <img src="./asset/images/blogAPI.png" alt="une api pour un blog" id="blogAPI">
-                        <div class="item-overlay">
-                            <div>
-                                <h3>Projet blog API</h3>
-                                <p>Projet de stage, une API nodeJS TypeScript pour une application Blog.</p>
-                            </div>
-                            <a href="" class="boutonVoir">Voir</a>
+                </div>                
+                <div class="item">
+                    <img src="./asset/images/contactFormAMP.png" alt="formulaire de contact" id="contactForm">
+                    <img src="./asset/images/cross.png" alt="croix pour fermer" class="petiteCroix" id="croixContactForm">
+                    <div class="item-overlay">
+                        <div>
+                            <h3>Contact</h3>
+                            <p>Projet réalisé pendant mon stage. Il s'agissait là de la création de la <strong>page Contact</strong> pour le site web AMP (aide mon projet). Site développé en <strong>TypeScript</strong> avec <strong>Next.JS</strong></p>
                         </div>
+                        <a class="boutonVoir" id="boutonVoir2" onclick="voirContactForm()">Voir</a>
                     </div>
-                    <div class="item">
-                        <img src="./asset/images/MielConnect/MCheader.png" alt="miel connect" id="mielConnect">
-                        <div class="item-overlay">
-                            <div>
-                                <h3>Projet Miel Connect</h3>
-                                <p>Intégration d'une maquette faite par des designers. Projet Miel Connect avec Wordpress.</p>
-                            </div>
-                            <a href="" class="boutonVoir">Voir</a>
+                </div>
+                <div class="item">
+                    <img src="./asset/images/blogAPI.png" alt="une api pour un blog" id="blogAPI">
+                    <img src="./asset/images/cross.png" alt="croix pour fermer" class="petiteCroix" id="croixBlogAPI">
+                    <div class="item-overlay">
+                        <div>
+                            <h3>Blog</h3>
+                            <p>Projet réalisé pendant mon stage. Réalisation d'une <strong>API Node.js</strong> avec <strong>TypeScript</strong> et <strong>PostgreSQL</strong> pour une application Blog. Utilisation de l'<strong>ORM Prisma</strong> ainsi que <strong>Insomnia</strong>, outils d'envoi de <strong>requêtes http</strong>.</p>
                         </div>
+                        <a class="boutonVoir" id="boutonVoir3" onclick="voirBlogAPI()">Voir</a>
                     </div>
-                    <div class="item">
-                        <img src="./asset/images/RCMortagne/RCMortagne.jpg" alt="RC Mortagne" id="RCMortagne">
-                        <div class="item-overlay">
-                            <div>
-                                <h3>Projet RC Mortagne</h3>
-                                <p>Mon projet de formation, développer le site d'une équipe de football avec Symfony.</p>
-                            </div>
-                            <a href="" class="boutonVoir">Voir</a>
+                </div>
+                <div class="item">
+                    <img src="./asset/images/MielConnect/MCheader.png" alt="miel connect" id="mielConnect">
+                    <div class="item-overlay">
+                        <div>
+                            <h3>Miel Connect</h3>
+                            <p><strong>Intégration</strong> d'une maquette faite par des <strong>designers</strong> d'un site fictif selon cahier des charges. Intégration avec <strong>Wordpress</strong> et <strong>Elementor</strong>.</p>
                         </div>
+                        <a class="boutonVoir" id="boutonVoir4">Voir</a>
                     </div>
-                    <div class="item">
-                        <img src="./asset/images/nature.png" alt="nature point de vue" id="naturePV" onclick="document.location = 'nature.php';">
-                        <div class="item-overlay">
-                            <div>
-                                <h3>Projet Nature</h3>
-                                <p>Création d'une page avec l'effet parallax.</p>
-                            </div>
-                            <a href="" class="boutonVoir">Voir</a>
+                </div>
+                <div class="item">
+                    <img src="./asset/images/RCMortagne/RCMortagne.jpg" alt="RC Mortagne" id="RCMortagne">
+                    <div class="item-overlay">
+                        <div>
+                            <h3>RC Mortagne</h3>
+                            <p>Mon projet de fin de formation, faire le <strong>design</strong> puis <strong>développer</strong> le site fictif d'une équipe de football. Site réalisé avec le framework de PHP : <strong>Symfony</strong>. Base de données avec <strong>MySQL</strong>. </p>
                         </div>
+                        <a class="boutonVoir" id="boutonVoir5" onclick="voirRCMortagne()">Voir</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./asset/images/portfolio.png" alt="portfolio" id="portfolio">
+                    <div class="item-overlay">
+                        <div>
+                            <h3>Portfolio alternatif</h3>
+                            <p>Site portfolio contenant une <strong>mouse-trail</strong>, un <strong>carousel</strong> de photos de projets, une <strong>roue des compétences</strong> ainsi qu'un formulaire de <strong>contact</strong> flottant.</p>
+                        </div>
+                        <a class="boutonVoir" id="boutonVoir6" onclick="voirPortfolio()">Voir</a>
                     </div>
                 </div>
             </div>
+            <div id="overlay4">
+                <img src="./asset/images/MielConnect/MCheader.png" id="mielConnectBigScreen" alt="miel connect grand">
+                <img src="./asset/images/MielConnect/MCpres.png" id="mielConnect2BigScreen" alt="miel connect grand">
+            </div>
+        
         </div>
     </section>
     
+
+    <script src="script.js"></script>       
 </body>
 </html>
