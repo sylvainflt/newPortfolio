@@ -71,29 +71,29 @@
                             <h3>AirGo Run</h3>
                             <p>Projet réalisé au cours de la formation web dev avec Instep à Amiens. Il s'agissait de <strong>designer</strong> puis <strong>intégrer</strong> le site AirGo Run selon <strong>cahier des charges</strong> (site fictif faisant la promotion de montres sportives). Utilisation de <strong>Figma</strong>, puis intégration <strong>HTML CSS</strong>.</p>
                         </div>
-                        <a class="boutonVoir" id="boutonVoir1" onclick="voirAirGoRun()">Voir</a>
+                        <a class="boutonVoir" id="boutonVoir1">Voir</a>
                     </div>
                 </div>                
                 <div class="item">
+                    
                     <img src="./asset/images/contactFormAMP.png" alt="formulaire de contact" id="contactForm">
-                    <img src="./asset/images/cross.png" alt="croix pour fermer" class="petiteCroix" id="croixContactForm">
                     <div class="item-overlay">
                         <div>
                             <h3>Contact</h3>
                             <p>Projet réalisé pendant mon stage. Il s'agissait là de la création de la <strong>page Contact</strong> pour le site web AMP (aide mon projet). Site développé en <strong>TypeScript</strong> avec <strong>Next.JS</strong></p>
                         </div>
-                        <a class="boutonVoir" id="boutonVoir2" onclick="voirContactForm()">Voir</a>
-                    </div>
+                        <a class="boutonVoir" id="boutonVoir2">Voir</a>
+                    </div>                    
+                    
                 </div>
                 <div class="item">
                     <img src="./asset/images/blogAPI.png" alt="une api pour un blog" id="blogAPI">
-                    <img src="./asset/images/cross.png" alt="croix pour fermer" class="petiteCroix" id="croixBlogAPI">
                     <div class="item-overlay">
                         <div>
                             <h3>Blog</h3>
                             <p>Projet réalisé pendant mon stage. Réalisation d'une <strong>API Node.js</strong> avec <strong>TypeScript</strong> et <strong>PostgreSQL</strong> pour une application Blog. Utilisation de l'<strong>ORM Prisma</strong> ainsi que <strong>Insomnia</strong>, outils d'envoi de <strong>requêtes http</strong>.</p>
                         </div>
-                        <a class="boutonVoir" id="boutonVoir3" onclick="voirBlogAPI()">Voir</a>
+                        <a class="boutonVoir" id="boutonVoir3">Voir</a>
                     </div>
                 </div>
                 <div class="item">
@@ -113,7 +113,7 @@
                             <h3>RC Mortagne</h3>
                             <p>Mon projet de fin de formation, faire le <strong>design</strong> puis <strong>développer</strong> le site fictif d'une équipe de football. Site réalisé avec le framework de PHP : <strong>Symfony</strong>. Base de données avec <strong>MySQL</strong>. </p>
                         </div>
-                        <a class="boutonVoir" id="boutonVoir5" onclick="voirRCMortagne()">Voir</a>
+                        <a class="boutonVoir" id="boutonVoir5">Voir</a>
                     </div>
                 </div>
                 <div class="item">
@@ -123,15 +123,32 @@
                             <h3>Portfolio alternatif</h3>
                             <p>Site portfolio contenant une <strong>mouse-trail</strong>, un <strong>carousel</strong> de photos de projets, une <strong>roue des compétences</strong> ainsi qu'un formulaire de <strong>contact</strong> flottant.</p>
                         </div>
-                        <a class="boutonVoir" id="boutonVoir6" onclick="voirPortfolio()">Voir</a>
+                        <a href="https://sylvainflt.github.io/portfolioAlt2/" target="_blank" class="boutonVoir" id="boutonVoir6">Voir</a>
                     </div>
                 </div>
             </div>
+            <div id="overlay1">
+                <img src="./asset/images/cross.png" alt="croix pour fermer" class="petiteCroix" id="croixAirGoRun">
+                <img src="./asset/images/airGoRun.png" class="centrerGrandeImage" id="airGoRunBigScreen" alt="air go run grand">
+            </div>
+            <div id="overlay2">
+                <img src="./asset/images/cross.png" alt="croix pour fermer" class="petiteCroix" id="croixContactPage">
+                <img src="./asset/images/contactFormAMP.png" class="centrerGrandeImage" id="contactPageBigScreen" alt="contact page grand">
+            </div>
+            <div id="overlay3">
+                <img src="./asset/images/cross.png" alt="croix pour fermer" class="petiteCroix" id="croixBlogAPI">
+                <img src="./asset/images/blogAPI.png" class="centrerGrandeImage" id="blogAPIBigScreen" alt="blog api grand">
+            </div>
             <div id="overlay4">
+                <img src="./asset/images/cross.png" alt="croix pour fermer" class="petiteCroix" id="croixMielConnect">
                 <img src="./asset/images/MielConnect/MCheader.png" id="mielConnectBigScreen" alt="miel connect grand">
                 <img src="./asset/images/MielConnect/MCpres.png" id="mielConnect2BigScreen" alt="miel connect grand">
             </div>
-        
+            <div id="overlay5">
+                <img src="./asset/images/cross.png" alt="croix pour fermer" class="petiteCroix" id="croixRCMortagne">
+                <img src="./asset/images/RCMortagne/RCMortagne.jpg" id="rcMortagneBigScreen" alt="RC Mortagne grand">
+                <img src="./asset/images/RCMortagne/lactu.png" id="rcMortagne2BigScreen" alt="RC Mortagne grand">
+            </div>
         </div>
     </section>
     
