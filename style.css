@@ -448,6 +448,11 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
 }
+.copyright {
+    text-align: center;
+    color: var(--color2);
+    margin-top: 20px;
+}
 /*========================================================= MEDIA QUERIES =========================================================================*/
 
 @media screen and (max-width: 1300px) {
