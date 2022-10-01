@@ -5,6 +5,7 @@
     --color4: #1E65FF;
     --color5: #232C33;  
     --color6: #FF8C42;
+    --color7: #379EFF24;
 }
 
 @font-face {
@@ -24,13 +25,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
 }
 body {
+    background: var(--color2);
+    color: var(--color5);
     font-family:'interTight';
-    background-color: var(--color2);
-    color: #232C33;
     overflow-x: hidden;
+    text-align: center;
 }
+a {    
+    color: var(--color5);
+}
+
 /*================================================================ SCROLLBAR =====================================================================*/
 ::-webkit-scrollbar {
     width: 8px;    
@@ -201,12 +211,31 @@ body {
     transition: all .5s;
     cursor: pointer;
     z-index: 10;
+    opacity: 0;
+    animation: apparaitreBoutonCV .5s linear 1.8s forwards;
+}
+@keyframes apparaitreBoutonCV {
+    to {
+        opacity: 1;
+    }
 }
 #boutonCV:hover {
     background-color: var(--color6);
     color: var(--color2);
 }
-
+.bouton {
+    text-decoration: none;
+    border: solid 1px var(--color6);
+    border-radius: 3px;
+    color: var(--color6);
+    padding: 5px 10px;
+    transition: all .5s;
+    cursor: pointer;
+}
+.bouton:hover {
+    background-color: var(--color6);
+    color: var(--color2);
+}
 #presentationSuite {
     position: relative;
 }
@@ -415,7 +444,7 @@ body {
     cursor: pointer;
     z-index: 10;
     border-radius: 10px;
-    box-shadow: 1px 1px 5px var(--color2);
+    box-shadow: 0 0 5px var(--color2);
 }
 #overlay1,
 #overlay2,
@@ -462,9 +491,124 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
 }
+.skew-c2{
+    width:100%;
+    height:100px;
+    left:0px;
+    background: linear-gradient(to right bottom, var(--color4) 49%, var(--color2) 50%);
+}
+#contact {
+    opacity: 0;
+    animation: apparaitreContact .5s linear 1.8s forwards;
+}
+@keyframes apparaitreContact {
+    to {
+        opacity: 1;
+    }
+}
+.contactTitre {
+    font-size:60px;
+    font-family:'oswald';
+    font-weight:normal;
+    margin: 0 0 30px 0;
+}
+.contactContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    margin: 100px auto;
+    width: 50%;
+}
+.formContact {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    min-width: 300px;
+}
+
+
+/*================================================================================================================================================*/
+
+.contact__options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 40%;
+    align-self: flex-start;
+    min-width: 240px;
+}
+
+.contact__option {
+    background: var(--color1);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid var(--color4);
+    transition: .5s;
+}
+
+.contact__option:hover {
+    background: var(--color7);
+    border-color: var(--color4);
+}
+
+.contact__option-icon {
+    font-size: 1.5rem;
+}
+#contact h3 {
+    font-size: 25px;
+}
+#contact h4 {
+    font-weight: 500;
+    color: var(--color3);
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+.contactMe {
+    color: var(--color4);
+}
+/* ===============FORM==========================*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: var(--color1);
+    border: 2px solid var(--color4);
+    resize: none;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1300px) {
+    
+    .contactContainer {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 670px) {    
+    .contactContainer {
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 50px auto;
+        gap: 30px;
+    }
+}
+
+/*================================================================================================================================================*/
+footer {
+    background-color: var(--color1);
+}
 .copyright {
     text-align: center;
-    color: var(--color2);
+    color: var(--color5);
     margin-top: 20px;
 }
 /*========================================================= MEDIA QUERIES =========================================================================*/
