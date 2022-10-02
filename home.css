@@ -67,6 +67,7 @@ a {
     font-size: 20px;
     align-self: center;
     color: #1e65ff;
+    z-index: 10;
 }
 .nomTitreConteneur {
     background-color: var(--color1);
