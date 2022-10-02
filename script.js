@@ -30,9 +30,16 @@ document.getElementById("croixBlogAPI").addEventListener("click", () => {
 });
 
 //------------overlay4---------------------------------
-document.getElementById("boutonVoir4").addEventListener("click", () => {
-    document.getElementById("overlay4").classList.add("derouleSite");
-    document.querySelector("#croixMielConnect").style.opacity = 1;
+document.getElementById("bouton4Lire").addEventListener("click", () => {
+    /*document.getElementById("overlay4").classList.add("derouleSite");
+    document.querySelector("#croixMielConnect").style.opacity = 1;*/
+    document.getElementById("MCvideo").play();
+});
+document.getElementById("bouton4Pause").addEventListener("click", () => {    
+    document.getElementById("MCvideo").pause();
+});
+document.getElementById("bouton4Agrandir").addEventListener("click", () => {
+    document.getElementById("MCvideo").requestFullscreen();
 });
 document.getElementById("croixMielConnect").addEventListener("click", () => {
     document.getElementById("overlay4").style.display = "none";
