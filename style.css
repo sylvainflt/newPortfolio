@@ -105,3 +105,11 @@ h2 {
     align-items: center;
     gap: 10px;
 }
+@media screen and (max-width: 1050px) {
+    .planche {
+        width: 70vw;
+    }
+    body {
+        background-position: 60%;
+    }
+}

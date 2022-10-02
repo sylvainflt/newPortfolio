@@ -291,6 +291,7 @@ a {
 }
 .portfolioP {
     color:#fff;
+    text-align: left;
     width: 40%;
     font-size:20px;
     font-family:'Raleway', serif;
