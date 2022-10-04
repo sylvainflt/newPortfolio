@@ -45,13 +45,3 @@ document.getElementById("croixMielConnect").addEventListener("click", () => {
     document.getElementById("overlay4").style.display = "none";
     document.getElementById("overlay4").classList.remove("derouleSite");    
 });
-
-//------------overlay5---------------------------------
-document.getElementById("boutonVoir5").addEventListener("click", () => {
-    document.getElementById("overlay5").classList.add("derouleSite");
-    document.querySelector("#croixRCMortagne").style.opacity = 1;
-});
-document.getElementById("croixRCMortagne").addEventListener("click", () => {
-    document.getElementById("overlay5").style.display = "none";
-    document.getElementById("overlay5").classList.remove("derouleSite");    
-});
